@@ -8,10 +8,10 @@ function Home() {
         <h3>MERN Developer</h3>
         <ul id="link-list">
           <li>
-            <a href="/projects">Projects</a>
+            <a href="/projects" id="links">Projects</a>
           </li>
           <li>
-            <a href="/about-me">About Me</a>
+            <a href="/about-me" id="links">About Me</a>
           </li>
         </ul>
       </div>
