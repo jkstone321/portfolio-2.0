@@ -1,18 +1,22 @@
+import Contact from "../../components/contact";
 import "./style.css";
 
 function Home() {
   return (
     <>
       <div id="box">
-        <h1 id="title-name">Jordan Stone</h1>
-        <h3>MERN Developer</h3>
+        <h1 id="title-name" className="my-name">
+          Jordan Stone
+        </h1>
+        <h3 id="title-name">MERN Developer</h3>
+        <Contact />
         <ul id="link-list">
-          <li>
-            <a href="/projects" id="links">Projects</a>
-          </li>
-          <li>
-            <a href="/about-me" id="links">About Me</a>
-          </li>
+          <a href="/projects">
+            <li id="homepage-btns">Projects</li>
+          </a>
+          <a href="/about-me">
+            <li id="homepage-btns">About Me</li>
+          </a>
         </ul>
       </div>
     </>

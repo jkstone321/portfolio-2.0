@@ -1,5 +1,6 @@
 .project-box{
     height: 45rem !important;
+    justify-content: flex-start !important;
 }
 
 img {
@@ -11,23 +12,13 @@ img {
     left: 0rem;
     top: 0rem;
 }
-#title-name{
-    margin: 0;
-    margin-top: 0.5rem;
-    font-size: 4rem;
-
-    line-height: 4rem;
-}
 
 #link-list-projects{
     width: 100%;
     max-width: 100%;
-    position: absolute;
-    right: 50%;
     margin: 0;
     margin-top: 2rem;
     padding: 0;
-    transform: translateX(50%);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -90,7 +81,6 @@ img {
         max-width: 95%;
         margin: 0.25rem;
         padding: 0;
-        margin-top: 2rem;
     }
     #link-list-projects{
         margin-top: 2rem;
@@ -101,9 +91,18 @@ img {
     }
     #box {
         border-radius: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
     }
     #modal-info{
         height: 100%;
         border-radius: 0;
     }
+    
   }
+  @media screen and (max-height:45rem) {
+        #box{
+          height: 100% !important;
+          border-radius: 0;
+        }
+      }

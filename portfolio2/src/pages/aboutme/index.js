@@ -9,11 +9,6 @@ function About() {
         <a href="/" id="home-link">
           <img src={HomeBtn} id="home-btn" alt="home button" />
         </a>
-        <ul id="link-list">
-          <li>
-            <a href="/">Home</a>
-          </li>
-        </ul>
       </div>
     </>
   );
