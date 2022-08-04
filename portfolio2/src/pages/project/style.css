@@ -25,6 +25,7 @@ img {
     position: absolute;
     right: 50%;
     margin: 0;
+    margin-top: 2rem;
     padding: 0;
     transform: translateX(50%);
     display: flex;
@@ -38,14 +39,58 @@ img {
     margin: 0;
     background-color: rgb(59, 59, 59);
     border: 0;
+    border-radius: 0.5rem;
+}
+
+#project-box:hover {
+    cursor: pointer;
+}
+
+
+#test-modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 50%;
+    right: 50%;
+    opacity: .5;
+    transform: translate(50%, -50%);
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+#modal-info {
+    z-index: 10;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: all 100ms;
+    position: absolute;
+    display: block;
+    background-color: grey;
+    opacity: 1;
+    height: 40rem;
+    width: 50rem;
+    border-radius: 0.5rem;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
 }
 
 @media screen and (max-width:630px) {
     li{
         width: 100%;
         max-width: 95%;
-        margin: 0.5rem;
+        margin: 0.25rem;
         padding: 0;
+        margin-top: 2rem;
     }
     #link-list-projects{
         margin-top: 2rem;
@@ -54,5 +99,11 @@ img {
         height: 8rem;
         width: 100%;
     }
-    
+    #box {
+        border-radius: 0 !important;
+    }
+    #modal-info{
+        height: 100%;
+        border-radius: 0;
+    }
   }
