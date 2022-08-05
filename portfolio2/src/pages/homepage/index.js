@@ -9,7 +9,7 @@ function Home() {
           Jordan Stone
         </h1>
         <h3 id="title-name">MERN Developer</h3>
-        <Contact />
+        <Contact page="homepage"/>
         <ul id="link-list">
           <a href="/projects">
             <li id="homepage-btns">Projects</li>

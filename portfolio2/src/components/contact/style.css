@@ -6,22 +6,21 @@
     flex-direction: row;
     justify-content: space-around;
     max-width: 100%;
-    margin-top: 2rem;
+    margin-top: 2rem; 
 }
-
 #contact-link {
     z-index: 9;
     height: 5rem;
     width: 5rem;
     background-color: rgb(82, 82, 82);
-    border: 2px solid rgb(161, 161, 161);
+    border: 2px solid black;
     border-radius: 50%;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 #contact-link:hover {
     background-color: rgb(59, 59, 59);
-    border: 2px solid rgb(82, 82, 82);
+    border: 2px solid rgb(59 59 59) !important;
 }
 
 #contact-logos {

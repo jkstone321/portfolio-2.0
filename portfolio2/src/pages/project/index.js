@@ -1,4 +1,5 @@
 import "./style.css";
+import Contact from "../../components/contact";
 import HomeBtn from "../../house.svg";
 import CloseBtn from "../../x.svg";
 import React, { useState } from "react";
@@ -59,6 +60,8 @@ function Projects() {
           </div>
         </ul>
       </div>
+
+      <Contact page="projects"/>
 
       {/* LEVEL UP MODAL */}
       <div
