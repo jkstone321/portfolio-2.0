@@ -1,11 +1,11 @@
 #homepage-btns:hover{
-    background-color: rgb(59, 59, 59);
+    background-color: var(--secondary-dark);
     transition: all 300ms ease-in-out;
-    border: 2px solid rgb(82 82 82);
+    border: 2px solid var(--secondary-dark);
 }
-#homepage-btns {
+/* #homepage-btns {
     width: 10rem;
-    border: 2px solid grey;
+    border: 2px solid var(--primary-light);
     border-radius: 2rem;
     height: 3rem;
     color: black;
@@ -13,23 +13,91 @@
     font-size: 1.5rem;
     line-height: 2.75rem;
     cursor: pointer;
-    background-color: rgb(82 82 82);
-}
+    background-color: var(--secondary);
+} */
 
-#title-name{
+#my-name{
+    text-align: left;
+    font-size: 7rem;
     margin: 0;
-    line-height: 5rem;
-    display: block;
+    margin-top: 1.3rem;
+    padding: 0;
+    line-height: 10rem;
+    font-weight: 600;
 }
-.my-name{
-    margin-top: 1rem !important;
-    font-size: 4rem;
+#alittleflexboxaction{
+    display: flex;
 }
-h3 {
+#first-letter{
+    font-size: 10rem;
+    margin: 0;
+    padding: 0;
+    transform: translateX(.5rem);
+    margin-left: 2rem;
+}
+#title-name{
     padding-bottom: 1rem;
+    position: absolute;
+    left: 8rem;
+    top: 9rem;
+    font-size: 1.5rem;
 }
 
 #link-list{
     width: 100%;
     padding: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
+
+
+
+
+
+
+
+.btn {
+    color: var(--primary-dark);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2rem;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 50%; 
+}
+
+      .btn-2 {
+        letter-spacing: 1.5px; }
+      
+      .btn-2:hover,
+      .btn-2:active {
+        letter-spacing: 5px; }
+      
+      .btn-2:after,
+      .btn-2:before {
+        backface-visibility: hidden;
+        border: 1px solid rgba(255, 255, 255, 0);
+        bottom: 0px;
+        content: " ";
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        transition: all 280ms ease-in-out;
+        width: 0; }
+      
+      .btn-2:hover:after,
+      .btn-2:hover:before {
+        backface-visibility: hidden;
+        border-color: var(--secondary-light);
+        transition: width 350ms ease-in-out;
+        width: 70%; }
+      
+      .btn-2:hover:before {
+        bottom: auto;
+        top: 0;
+        width: 70%; }

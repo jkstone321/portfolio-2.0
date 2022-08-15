@@ -12,15 +12,15 @@
     z-index: 9;
     height: 5rem;
     width: 5rem;
-    background-color: rgb(82, 82, 82);
-    border: 2px solid black;
+    background-color: var(--primary);
+    border: 2px solid var(--primary-light);
     border-radius: 50%;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
 #contact-link:hover {
-    background-color: rgb(59, 59, 59);
-    border: 2px solid rgb(59 59 59) !important;
+    background-color: var(--secondary-dark);
+    border: 2px solid var(--secondary-dark) !important;
 }
 
 #contact-logos {

@@ -32,6 +32,7 @@ function Projects() {
         <a href="/" id="home-link">
           <img src={HomeBtn} id="home-btn" alt="home button" />
         </a>
+        <div id="like-a-line-break-or-something"></div>
         <ul id="link-list-projects">
           <div>
             <li>
@@ -61,7 +62,7 @@ function Projects() {
         </ul>
       </div>
 
-      <Contact page="projects"/>
+      <Contact page="projects" />
 
       {/* LEVEL UP MODAL */}
       <div
@@ -77,6 +78,7 @@ function Projects() {
             onClick={() => handleLevelUpShow("levelUp")}
           />
           <h1>Level Up</h1>
+          <div id="like-a-line-break-or-something-2"></div>
         </div>
       </div>
 
@@ -94,6 +96,24 @@ function Projects() {
             onClick={() => handleLevelUpShow("planted")}
           />
           <h1>Planted</h1>
+          <div id="like-a-line-break-or-something-2"></div>
+          <div id="planted-text">
+            <div id="planted-sum">
+              Planted is the second project I did for the UCF Bootcamp. We were
+              tasked with making an app that utilizes a database using Node
+              packages MySQL2 and Sequellize. When the user creates an account
+              on Planted, they are given a grid they can use to plan out their
+              garden and their layout and plants are saved to their user in the
+              database.
+            </div>
+            <div id="planted-tech">
+              <div id="planted-tech-title">Technologies Used</div>
+              <ol>
+                <li></li>
+              </ol>
+            </div>
+            <div id="planted-links"></div>
+          </div>
         </div>
       </div>
 
@@ -111,6 +131,7 @@ function Projects() {
             onClick={() => handleLevelUpShow("idunno")}
           />
           <h1>iDunno</h1>
+          <div id="like-a-line-break-or-something-2"></div>
         </div>
       </div>
     </>
