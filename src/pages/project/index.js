@@ -28,41 +28,29 @@ function Projects() {
   return (
     <>
       <div id="box" className="project-box">
-        <h1 id="title-name">My Projects</h1>
-        <a href="/" id="home-link">
-          <img src={HomeBtn} id="home-btn" alt="home button" />
-        </a>
-        <div id="like-a-line-break-or-something"></div>
         <ul id="link-list-projects">
-          <div>
-            <li>
-              <div
-                id="project-box"
-                onClick={() => handleLevelUpShow("levelUp")}
-              >
-                <h1>Level Up</h1>
-              </div>
-            </li>
-            <li>
-              <div
-                id="project-box"
-                onClick={() => handleLevelUpShow("planted")}
-              >
-                <h1>Planted</h1>
-              </div>
-            </li>
-          </div>
-          <div>
-            <li>
-              <div id="project-box" onClick={() => handleLevelUpShow("idunno")}>
-                <h1>iDunno</h1>
-              </div>
-            </li>
-          </div>
+          <li>
+            <div id="project-box" onClick={() => handleLevelUpShow("levelUp")}>
+              <h1 id="project-title">Level Up</h1>
+            </div>
+          </li>
+          <li>
+            <div
+              id="project-box"
+              onClick={() => handleLevelUpShow("planted")}
+              className="planted-box"
+            >
+              <h1 id="project-title">Planted</h1>
+            </div>
+          </li>
+          <li>
+            <div id="project-box" onClick={() => handleLevelUpShow("idunno")}>
+              <h1 id="project-title">iDunno</h1>
+            </div>
+          </li>
         </ul>
+        <Contact />
       </div>
-
-      <Contact page="projects" />
 
       {/* LEVEL UP MODAL */}
       <div
@@ -85,7 +73,19 @@ function Projects() {
       {/* PLANTED MODAL */}
       <div
         id="modal"
-        style={!plantedModal ? { display: "none" } : { display: "inline" }}
+        style={
+          !plantedModal
+            ? {
+                visibility: "hidden",
+                opacity: "0",
+                transition: "visibility 0s, opacity 3s ease !important",
+              }
+            : {
+                visibility: "visible",
+                opacity: "1",
+                transition: "visibility 0s, opacity 3s ease !important",
+              }
+        }
       >
         <div id="test-modal" onClick={() => handleLevelUpShow("planted")}></div>
         <div id="modal-info">

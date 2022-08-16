@@ -1,4 +1,5 @@
 import Contact from "../../components/contact";
+import Navigation from "../../components/navigation";
 import "./style.css";
 
 function Home() {
@@ -11,15 +12,9 @@ function Home() {
             ordan Stone
           </div>
         </div>
-        <h3 id="title-name">MERN developer</h3>
-        <ul id="link-list">
-          <a href="/projects">
-            <li className="btn btn-2">Projects</li>
-          </a>
-          <a href="/about-me" >
-            <li className="btn btn-2">About Me</li>
-          </a>
-        </ul>
+        <h3 id="title-name">MERN Developer</h3>
+        <Navigation />
+        <Contact />
       </div>
     </>
   );
