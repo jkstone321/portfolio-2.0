@@ -37,6 +37,7 @@ a{
   border-radius: 0.5rem;
   height: 30rem;
   max-width: 100%;
+  min-width: 780px;
   width: 60rem;
   position: absolute;
   top: 50%;
@@ -50,6 +51,7 @@ a{
   #box{
     height: 100%;
     width: 100%;
+    min-width: 100%;
   }
 }
 @media screen and (max-height:45rem) {

@@ -9,8 +9,9 @@ function Home() {
         <div id="alittleflexboxaction">
           <div id="first-letter">J</div>
           <div id="my-name" className="my-name">
-            ordan Stone
+            ordan{" "}
           </div>
+          <div id="last-name">Stone</div>
         </div>
         <h3 id="title-name">MERN Developer</h3>
         <Navigation />
