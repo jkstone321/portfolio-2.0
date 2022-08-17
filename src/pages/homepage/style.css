@@ -134,6 +134,13 @@
             justify-content: center;
             flex-wrap: wrap;
         }
+        #title-name{
+            top: 10rem;
+            left:50%;
+            transform: translateX(-50%);
+            min-width: 250px;
+            padding: 0;
+        }
         
     }
 
