@@ -35,7 +35,8 @@
 }
 #alittleflexboxaction{
     display: flex;
-    min-width: 750px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 #first-letter{
     font-size: 10rem;
@@ -43,12 +44,13 @@
     padding: 0;
     transform: translateX(.5rem);
     margin-left: 3rem;
+    transition: all 200ms linear;
 }
 #title-name{
     padding-bottom: 1rem;
-    position: absolute;
-    left: 8rem;
-    top: 9rem;
+    position: relative;
+    left: -15rem;
+    top: -4rem;
     min-width: 250px;
     font-size: 1.5rem;
     color: var(--secondary)
@@ -67,11 +69,12 @@
 }
 
 
-@media screen and (max-width:630px) {
+@media screen and (max-width:730px) {
     #alittleflexboxaction{
-        min-width: 300px;
+        max-width: 100%;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
+        margin-top: 2rem;
     }
     #my-name, #last-name{
         font-size: 6rem;
@@ -91,7 +94,7 @@
         height: 6rem;
     }
     #title-name{
-        top: 13rem;
+        top: 0rem;
         left:50%;
         transform: translateX(-50%);
         min-width: 250px;
@@ -102,6 +105,7 @@
     }
     #nav-box{
         margin-bottom: 5rem !important;
+        width: 100% !important;
     }
     .button {
         font-size: 1.5rem !important;
@@ -135,7 +139,7 @@
             flex-wrap: wrap;
         }
         #title-name{
-            top: 10rem;
+            top: 11rem;
             left:50%;
             transform: translateX(-50%);
             min-width: 250px;

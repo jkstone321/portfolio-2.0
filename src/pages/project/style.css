@@ -116,7 +116,7 @@ img {
     cursor: pointer;
 }
 
-@media screen and (max-width:630px) {
+@media screen and (max-width:730px) {
     li{
         width: 100%;
         max-width: 95%;
