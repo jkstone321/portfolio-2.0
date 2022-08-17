@@ -73,6 +73,8 @@ img {
 
 #link-button{
     color: var(--primary-light);
+    cursor: pointer !important;
+    padding: .5rem;
 }
 
 #test-modal{
