@@ -9,13 +9,13 @@ function Home() {
         <div id="alittleflexboxaction">
           <div id="first-letter">J</div>
           <div id="my-name" className="my-name">
-            ordan{" "}
+            ordan
           </div>
           <div id="last-name">Stone</div>
         </div>
         <h3 id="title-name">MERN Developer</h3>
-        <Navigation />
-        <Contact page="homepage" />
+        <Navigation page="homepage" />
+        <Contact />
       </div>
     </>
   );
