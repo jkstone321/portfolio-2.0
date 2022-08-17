@@ -7,6 +7,11 @@
   --secondary-dark: #664731;
 }
 
+* {
+  transition: all 300ms linear;
+  transition: visibility 0;
+}
+
 body {
   margin: 0;
   /* font-family: 'League Spartan', sans-serif; */
@@ -23,8 +28,6 @@ code {
 }
 li{
   list-style-type: none;
-  transition: all 500ms ease-in-out;
-  margin: 1rem;
 }
 img {
   min-height: 2rem;

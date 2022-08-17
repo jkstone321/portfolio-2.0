@@ -1,16 +1,16 @@
 import "./style.css";
 
-function Navigation() {
+function Navigation(props) {
   return (
     <>
-      <ul id="link-list">
-        <li className="btn btn-2">
-          <a href="/projects" id="links">
-            Projects
+      <ul id="nav-box">
+        <li className="button button-2">
+          <a href="/" id="links">
+            
           </a>
         </li>
 
-        <li className="btn btn-2">
+        <li className="button button-2">
           <a href="/about-me" id="links">
             About Me
           </a>

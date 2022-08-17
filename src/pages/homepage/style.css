@@ -119,7 +119,6 @@
     display: block;
     margin: 0 auto;
     position: relative;
-    transition: all 280ms ease-in-out;
     width: 0;
 }
       
@@ -127,7 +126,7 @@
 .btn-2:hover:before {
     backface-visibility: hidden;
     border-color: var(--secondary);
-    transition: width 350ms ease-in-out;
+    transition: width 350ms ease-in-out !important;
     width: 70%;
 }
       

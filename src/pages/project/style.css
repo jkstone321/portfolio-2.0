@@ -20,17 +20,17 @@ img {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items:flex-start;
     flex-direction: row;
     margin: 0;
-    margin-top: .5rem;
+    position: absolute;
+    top: 2rem;
 }
 
 #project-box {
     width: 16rem;
     height: 32rem;
     margin: 0;
-    margin-bottom: 4rem;
     color: var(--primary-light);
     background-color: var(--primary-dark);
     border: 5px solid var(--primary-dark);
@@ -40,7 +40,6 @@ img {
 }
 #project-box:hover{
     background-color: var(--secondary);
-    transition: all 200ms ease;
     border: 5px solid var(--secondary);
 }
 #project-title {
@@ -54,9 +53,27 @@ img {
     background-image: url("./planted-background.jpg");
     background-size: cover;
 }
+.levelup-box{
+    background-image: url("./levelup-background.png");
+    background-size: cover;
+}
 
+#project-links{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-dark);
+    position: relative;
+    top: -5rem;
+    opacity: 0;
+}
 
+#project-links:hover, #project-box:hover + #project-links{
+    opacity: 1;
+}
 
+#link-button{
+    color: var(--primary-light);
+}
 
 #test-modal{
     position: absolute;
@@ -79,7 +96,6 @@ img {
     top: 50%;
     right: 50%;
     transform: translate(50%, -50%);
-    transition: all 100ms;
     position: absolute;
     display: block;
     background-color: grey;
@@ -96,17 +112,6 @@ img {
     top: 0;
     right: 0;
     cursor: pointer;
-}
-
-#like-a-line-break-or-something{
-    height: 2px;
-    width: 25rem;
-    background-color: black;
-}
-#like-a-line-break-or-something-2{
-    height: 2px;
-    width: 100%;
-    background-color: black;
 }
 
 @media screen and (max-width:630px) {
