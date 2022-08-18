@@ -38,8 +38,20 @@ function Projects() {
               <h1 id="project-title">Level Up</h1>
             </div>
             <div id="project-links">
-              <a id="link-button">Link</a>
-              <a id="link-button">Repo</a>
+              <a
+                href="https://garden-boys-missing-their-popp.herokuapp.com/"
+                target="_blank"
+                id="link-button"
+              >
+                Link
+              </a>
+              <a
+                href="https://github.com/Drago9082/Level-Up"
+                target="_blank"
+                id="link-button"
+              >
+                Repo
+              </a>
             </div>
           </li>
           <li>
@@ -51,8 +63,20 @@ function Projects() {
               <h1 id="project-title">Planted</h1>
             </div>
             <div id="project-links">
-              <a id="link-button">Link</a>
-              <a id="link-button">Repo</a>
+              <a
+                href="https://agile-wildwood-01808.herokuapp.com/"
+                target="_blank"
+                id="link-button"
+              >
+                Link
+              </a>
+              <a
+                href="https://github.com/jkstone321/planted"
+                target="_blank"
+                id="link-button"
+              >
+                Repo
+              </a>
             </div>
           </li>
           <li>
@@ -60,15 +84,27 @@ function Projects() {
               <h1 id="project-title">iDunno</h1>
             </div>
             <div id="project-links">
-              <a id="link-button">Link</a>
-              <a id="link-button">Repo</a>
+              <a
+                href="https://droessling94.github.io/IDunno/"
+                target="_blank"
+                id="link-button"
+              >
+                Link
+              </a>
+              <a
+                href="https://github.com/Droessling94/IDunno"
+                target="_blank"
+                id="link-button"
+              >
+                Repo
+              </a>
             </div>
           </li>
         </ul>
-        <Contact />
-        <Navigation page="projects" />
+<Navigation page="projects" />
+        <Contact page="projects" />
+        
       </div>
-
       {/* LEVEL UP MODAL */}
       <div
         id="modal"

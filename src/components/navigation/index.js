@@ -1,28 +1,27 @@
 import "./style.css";
 
 function Navigation(props) {
-  const homepageNavBox = {
-    marginBottom: "8rem",
-    justifyContent: "space-evenly",
-  };
-  const projectNavBox = { marginBottom: "0", justifyContent: "space-between" };
-  const homepageButton = { margin: "0" };
-  const projectButton = { margin: "1rem" };
-  let navBoxStyling;
-  let btnStyling;
+  let navBoxStyling = {};
+  let btnStyling = {};
   let text = "";
   let goesHome = false;
   switch (props.page) {
     case "homepage":
       text = "Projects";
       goesHome = false;
-      navBoxStyling = homepageNavBox;
-      btnStyling = homepageButton;
+      navBoxStyling = {
+        justifyContent: "space-evenly",
+        bottom: "2rem",
+      };
+      btnStyling = { margin: "0" };
       break;
     case "projects":
       text = "Home";
-      navBoxStyling = projectNavBox;
-      btnStyling = projectButton;
+      navBoxStyling = {
+        justifyContent: "space-between",
+        bottom: "0.5rem",
+      };
+      btnStyling = { margin: "0 1rem 0 1rem" };
       goesHome = true;
       break;
   }

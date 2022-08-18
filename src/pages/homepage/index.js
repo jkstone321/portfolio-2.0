@@ -15,7 +15,7 @@ function Home() {
         </div>
         <h3 id="title-name">MERN Developer</h3>
         <Navigation page="homepage" />
-        <Contact />
+        <Contact page="homepage" />
       </div>
     </>
   );
