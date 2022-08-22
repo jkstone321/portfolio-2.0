@@ -5,7 +5,7 @@ import CloseBtn from "../../x.svg";
 import React, { useState } from "react";
 
 function Projects() {
-  const [levelUpModal, setLevelUpModal] = useState(true);
+  const [levelUpModal, setLevelUpModal] = useState(false);
   const [plantedModal, setPlantedModal] = useState(false);
   const [idunnoModal, setIdunnoModal] = useState(false);
 
