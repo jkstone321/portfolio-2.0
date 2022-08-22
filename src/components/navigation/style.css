@@ -19,7 +19,8 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    width: 50%; 
+    width: 50%;
+    transition: all 300ms linear;
 }
 
 .button-2 {

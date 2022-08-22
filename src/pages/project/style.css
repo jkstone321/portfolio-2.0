@@ -80,6 +80,8 @@ img {
 /**/    height: 15rem;
 /**/    padding: .5rem 0 .5rem 0;
 /**/    justify-content: space-evenly;
+transition: all 300ms linear;
+  transition: visibility 0;
 /**/}
 /**/
 /**/#project-box:hover + #project-links, #project-links:hover{
@@ -88,7 +90,7 @@ img {
 /**/#link-button{
 /**/    color: var(--primary-light);
 /**/    cursor: pointer !important;
-/**/    padding: 1rem 0 1rem 0;
+/**/    padding: 1rem 0 0.5rem 0;
 /**/    font-size: 1.25rem;
 /**/    position: relative;
 /**/    bottom: 1rem;
@@ -96,8 +98,9 @@ img {
 /**/    transform: translateX(-50%);
 /**/    width: 8rem;
 /**/    line-height: 2rem;
-/**/    transition: all 500ms ease-in-out !important;
-/**/  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+        transition: all 300ms linear;
+        text-transform: uppercase;
+/**/    --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 /**/}
 /**/#link-button::before,
 /**/#link-button::after {
@@ -194,7 +197,7 @@ img {
     position: relative;
     font-size: 1.1rem;
     line-height: 2rem;
-    top: 4rem;
+    top: 5rem;
     left: 5rem;
     width: 25rem;
     text-align:justify;
@@ -226,14 +229,45 @@ img {
 #levelup-link-group {
     position: relative;
     bottom: 19rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 #levelup-link {
     color: var(--primary-light);
-    margin: 0 7rem;
+    width: 13rem;
     font-size: 3rem;
     cursor: pointer;
+    transition: all 300ms linear;
+    letter-spacing: 1px;
 }
-
+#levelup-link:hover,
+#levelup-link:active {
+    letter-spacing: 5px;
+}
+#levelup-link:after,
+#levelup-link:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+#levelup-link:hover:after,
+#levelup-link:hover:before {
+    backface-visibility: hidden;
+    border-color: var(--secondary);
+    transition: width 350ms ease-in-out;
+    width: 90%;
+}
+#levelup-link:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 90%; 
+}
 
 
 @media screen and (max-width:730px) {
