@@ -19,7 +19,7 @@ function Navigation(props) {
       text = "Home";
       navBoxStyling = {
         justifyContent: "space-between",
-        bottom: "0.5rem",
+        bottom: "-4rem",
       };
       btnStyling = { margin: "0 1rem 0 1rem" };
       goesHome = true;

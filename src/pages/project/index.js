@@ -6,8 +6,12 @@ import React, { useState } from "react";
 
 function Projects() {
   const [levelUpModal, setLevelUpModal] = useState(false);
-  const [plantedModal, setPlantedUpModal] = useState(false);
+  const [plantedModal, setPlantedModal] = useState(false);
   const [idunnoModal, setIdunnoModal] = useState(false);
+
+  const [levelUpLinks, setLevelUpLinks] = useState(false);
+  const [plantedLinks, setPlantedLinks] = useState(false);
+  const [idunnoLinks, setIdunnoLinks] = useState(false);
 
   const handleLevelUpShow = (project) => {
     switch (project) {
@@ -15,13 +19,27 @@ function Projects() {
         setLevelUpModal(!levelUpModal);
         break;
       case "planted":
-        setPlantedUpModal(!plantedModal);
+        setPlantedModal(!plantedModal);
         break;
       case "idunno":
         setIdunnoModal(!idunnoModal);
         break;
       default:
         return;
+    }
+  };
+
+  const handleLinksShow = (project) => {
+    switch (project) {
+      case "levelup":
+        setLevelUpLinks(!levelUpLinks);
+        break;
+      case "planted":
+        setPlantedLinks(!plantedLinks);
+        break;
+      case "idunno":
+        setIdunnoLinks(!idunnoLinks);
+        break;
     }
   };
 
@@ -32,26 +50,34 @@ function Projects() {
           <li>
             <div
               id="project-box"
-              onClick={() => handleLevelUpShow("levelUp")}
               className="levelup-box"
             >
               <h1 id="project-title">Level Up</h1>
-            </div>
-            <div id="project-links">
-              <a
-                href="https://garden-boys-missing-their-popp.herokuapp.com/"
-                target="_blank"
-                id="link-button"
+
+              <div
+                id="project-links"
               >
-                Link
-              </a>
-              <a
-                href="https://github.com/Drago9082/Level-Up"
-                target="_blank"
-                id="link-button"
-              >
-                Repo
-              </a>
+                <a
+                  id="link-button"
+                  onClick={() => handleLevelUpShow("levelUp")}
+                >
+                  About
+                </a>
+                <a
+                  href="https://garden-boys-missing-their-popp.herokuapp.com/"
+                  target="_blank"
+                  id="link-button"
+                >
+                  Link
+                </a>
+                <a
+                  href="https://github.com/Drago9082/Level-Up"
+                  target="_blank"
+                  id="link-button"
+                >
+                  Repo
+                </a>
+              </div>
             </div>
           </li>
           <li>
@@ -62,7 +88,10 @@ function Projects() {
             >
               <h1 id="project-title">Planted</h1>
             </div>
-            <div id="project-links">
+            <div
+              id="project-links"
+              style={plantedLinks ? { height: "15rem" } : { height: "0" }}
+            >
               <a
                 href="https://agile-wildwood-01808.herokuapp.com/"
                 target="_blank"
@@ -80,10 +109,18 @@ function Projects() {
             </div>
           </li>
           <li>
-            <div id="project-box" onClick={() => handleLevelUpShow("idunno")}>
+            <div
+              id="project-box"
+              onClick={() => handleLevelUpShow("idunno")}
+              onMouseEnter={() => handleLinksShow("idunno")}
+              onMouseLeave={() => handleLinksShow("idunno")}
+            >
               <h1 id="project-title">iDunno</h1>
             </div>
-            <div id="project-links">
+            <div
+              id="project-links"
+              style={idunnoLinks ? { height: "15rem" } : { height: "0" }}
+            >
               <a
                 href="https://droessling94.github.io/IDunno/"
                 target="_blank"
@@ -101,9 +138,8 @@ function Projects() {
             </div>
           </li>
         </ul>
-<Navigation page="projects" />
+        <Navigation page="projects" />
         <Contact page="projects" />
-        
       </div>
       {/* LEVEL UP MODAL */}
       <div

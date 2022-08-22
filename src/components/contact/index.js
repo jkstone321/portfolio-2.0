@@ -9,7 +9,7 @@ function Contact(props) {
       containerStyle = { bottom: "-1rem" };
       break;
     case "projects":
-      containerStyle = { bottom: "4rem" };
+      containerStyle = { bottom: "-6px" };
       break;
   }
   return (
