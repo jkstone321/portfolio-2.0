@@ -40,13 +40,20 @@ img {
     margin: 0;
     color: var(--primary-light);
     background-color: var(--primary-dark);
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    border: 1rem solid var(--primary-dark);
     cursor: pointer;
     padding: 0;
 }
 #project-title {
-    margin: 0;
-    padding: 0;
-    border-bottom: 2px solid var(--primary-light);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem 0 1rem 0;
+    border-radius: 0.5rem;
+    width: 11rem;
+    border: 2px solid var(--primary-light);
     background-color: var(--primary-dark);
 }
 
@@ -60,15 +67,64 @@ img {
 /**/    display: flex;
 /**/    flex-direction: column;
 /**/    width: 16rem;
-        z-index: 10;
+/**/    z-index: 10;
+/**/    overflow: hidden;
+/**/    border-bottom-left-radius: 1.5rem;
+/**/    border-bottom-right-radius: 1.5rem;
+/**/    opacity: 0;
+/**/    height: 15rem;
+/**/    padding: .5rem 0 .5rem 0;
+/**/    justify-content: space-evenly;
 /**/}
 /**/
-
+/**/#project-box:hover + #project-links, #project-links:hover{
+/**/    opacity: 1;
+/**/}
 /**/#link-button{
 /**/    color: var(--primary-light);
 /**/    cursor: pointer !important;
-/**/    transition: height 200ms linear !important;
-/**/    padding: 1rem;
+/**/    padding: 1rem 0 1rem 0;
+/**/    font-size: 1.25rem;
+/**/    position: relative;
+/**/    bottom: 1rem;
+/**/    left: 50%;
+/**/    transform: translateX(-50%);
+/**/    width: 8rem;
+/**/    line-height: 2rem;
+/**/    transition: all 500ms ease-in-out !important;
+/**/  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+/**/}
+/**/#link-button::before,
+/**/#link-button::after {
+/**/    position: absolute;
+/**/    content: "";
+/**/    left: 0;
+/**/    bottom: -0.1rem;
+/**/    display: block;
+/**/    width: 100%;
+/**/    height: 2px;
+/**/    background: var(--secondary);
+/**/    transition: 1s var(--ease-out-expo);
+/**/}
+/**/#link-button::before {
+/**/    transform: scaleX(0);
+/**/    transform-origin: left;
+/**/}
+/**/#link-button::after{
+/**/    transform-origin: right;
+/**/    transition-delay: 0.25s;
+/**/}
+/**/#link-button:hover{
+/**/    font-size: 1.35rem;
+/**/    letter-spacing: 2px;
+/**/}
+/**/#link-button:hover::before {
+/**/    transform: scaleX(1);
+/**/    transition-delay: 0.25s;
+/**/}
+/**/#link-button:hover::after {
+/**/    transform: scaleX(0);
+/**/    transition-delay: 0s;
 /**/}
 /*************************************************************/
 /*************************************************************/
@@ -96,8 +152,10 @@ img {
     transform: translate(50%, -50%);
     position: absolute;
     display: block;
-    background-color: grey;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
     opacity: 1;
+    padding: 1rem 3rem 1rem 3rem;
     height: 45rem;
     width: 50rem;
     border-radius: 0.5rem;
@@ -111,6 +169,13 @@ img {
     right: 0;
     cursor: pointer;
 }
+
+/* THIS CODE IS FOR ALL THE INFORMATION ON THE RESPECTIVE MODALS */
+/*****************************************************************/
+
+
+
+
 
 @media screen and (max-width:730px) {
     li{

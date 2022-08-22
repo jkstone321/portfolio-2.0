@@ -48,50 +48,37 @@ function Projects() {
       <div id="box" className="project-box">
         <ul id="link-list-projects">
           <li>
-            <div
-              id="project-box"
-              className="levelup-box"
-            >
+            <div id="project-box" className="levelup-box">
               <h1 id="project-title">Level Up</h1>
-
-              <div
-                id="project-links"
+            </div>
+            <div id="project-links">
+              <a id="link-button" onClick={() => handleLevelUpShow("levelUp")}>
+                About
+              </a>
+              <a
+                href="https://garden-boys-missing-their-popp.herokuapp.com/"
+                target="_blank"
+                id="link-button"
               >
-                <a
-                  id="link-button"
-                  onClick={() => handleLevelUpShow("levelUp")}
-                >
-                  About
-                </a>
-                <a
-                  href="https://garden-boys-missing-their-popp.herokuapp.com/"
-                  target="_blank"
-                  id="link-button"
-                >
-                  Link
-                </a>
-                <a
-                  href="https://github.com/Drago9082/Level-Up"
-                  target="_blank"
-                  id="link-button"
-                >
-                  Repo
-                </a>
-              </div>
+                Link
+              </a>
+              <a
+                href="https://github.com/Drago9082/Level-Up"
+                target="_blank"
+                id="link-button"
+              >
+                Repo
+              </a>
             </div>
           </li>
           <li>
-            <div
-              id="project-box"
-              onClick={() => handleLevelUpShow("planted")}
-              className="planted-box"
-            >
+            <div id="project-box" className="planted-box">
               <h1 id="project-title">Planted</h1>
             </div>
-            <div
-              id="project-links"
-              style={plantedLinks ? { height: "15rem" } : { height: "0" }}
-            >
+            <div id="project-links">
+              <a id="link-button" onClick={() => handleLevelUpShow("planted")}>
+                About
+              </a>
               <a
                 href="https://agile-wildwood-01808.herokuapp.com/"
                 target="_blank"
@@ -109,18 +96,13 @@ function Projects() {
             </div>
           </li>
           <li>
-            <div
-              id="project-box"
-              onClick={() => handleLevelUpShow("idunno")}
-              onMouseEnter={() => handleLinksShow("idunno")}
-              onMouseLeave={() => handleLinksShow("idunno")}
-            >
+            <div id="project-box">
               <h1 id="project-title">iDunno</h1>
             </div>
-            <div
-              id="project-links"
-              style={idunnoLinks ? { height: "15rem" } : { height: "0" }}
-            >
+            <div id="project-links">
+              <a id="link-button" onClick={() => handleLevelUpShow("idunno")}>
+                About
+              </a>
               <a
                 href="https://droessling94.github.io/IDunno/"
                 target="_blank"
