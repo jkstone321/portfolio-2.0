@@ -1,5 +1,5 @@
 .project-box{
-    height: 42rem !important;
+    height: 41rem !important;
 }
 
 .planted-box{
@@ -42,9 +42,11 @@ img {
     background-color: var(--primary-dark);
     border-radius: 1.5rem;
     box-sizing: border-box;
-    border: 1rem solid var(--primary-dark);
+    border: .75rem solid var(--primary-dark);
     cursor: pointer;
     padding: 0;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 #project-title {
     position: relative;
@@ -61,7 +63,10 @@ img {
 /*** THIS IS CODE FOR THE LINKS THAT SHOW UP WHEN HOVERING ***/
 /*************************************************************/
 /**/#project-links{
-/**/    background-color: var(--primary-dark);
+/**/    background-color: #2b3e44;
+/**/    border: .75rem solid var(--primary-dark);
+/**/    box-sizing: border-box;
+/**/    border-top: 0;
 /**/    position: absolute;
 /**/    bottom: 0;
 /**/    display: flex;
@@ -155,9 +160,8 @@ img {
     background-color: var(--primary-dark);
     color: var(--primary-light);
     opacity: 1;
-    padding: 1rem 3rem 1rem 3rem;
-    height: 45rem;
-    width: 50rem;
+    height: 50rem;
+    width: 60rem;
     border-radius: 0.5rem;
     max-width: 100%;
     max-height: 100%;
@@ -165,15 +169,70 @@ img {
 
 #close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1rem;
+    right: 1rem;
+    transform: scale(1.5);
     cursor: pointer;
 }
 
 /* THIS CODE IS FOR ALL THE INFORMATION ON THE RESPECTIVE MODALS */
 /*****************************************************************/
-
-
+#levelup-title {
+    text-align: left;
+    font-size: 5rem;
+    position: relative;
+    left: 7rem;
+    top: 4rem;
+    margin: 0;
+    padding: 0;
+    width:20rem;
+    line-height: 5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 5px solid var(--primary-light)
+}
+#levelup-sum {
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    top: 4rem;
+    left: 5rem;
+    width: 25rem;
+    text-align:justify;
+}
+#levelup-tech {
+    width: 20rem;
+    position: relative;
+    left: 33.5rem;
+    top: -24rem;
+    font-size: 1.1rem;
+    border: 2px solid var(--primary-light);
+    border-radius: .5rem;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.5); 
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.5);
+}
+#levelup-tech-title {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--primary-light);
+    width: 12rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#tech {
+    text-align: left;
+    line-height: 2rem;
+    list-style-type: disc;
+}
+#levelup-link-group {
+    position: relative;
+    bottom: 19rem;
+}
+#levelup-link {
+    color: var(--primary-light);
+    margin: 0 7rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
 
 
 

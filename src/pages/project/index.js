@@ -5,7 +5,7 @@ import CloseBtn from "../../x.svg";
 import React, { useState } from "react";
 
 function Projects() {
-  const [levelUpModal, setLevelUpModal] = useState(false);
+  const [levelUpModal, setLevelUpModal] = useState(true);
   const [plantedModal, setPlantedModal] = useState(false);
   const [idunnoModal, setIdunnoModal] = useState(false);
 
@@ -136,7 +136,7 @@ function Projects() {
             alt="close button"
             onClick={() => handleLevelUpShow("levelUp")}
           />
-          <h1>Level Up</h1>
+          <h1 id="levelup-title">Level Up</h1>
           <p id="levelup-sum">
             Level Up is the third and final project assigned in the UCF
             bootcamp. We were tasked with creating an app that uses the full
@@ -148,20 +148,24 @@ function Projects() {
             user logs in they are able to chat with other people playing games
             on the site.
           </p>
-          <div id="planted-tech">
-            <h3 id="planted-tech-title">Technologies Used</h3>
-            <ul>
-              <li>Mongoose</li>
-              <li>MongoDB</li>
-              <li>Express</li>
-              <li>React</li>
-              <li>Node</li>
-              <li>Axios</li>
-              <li>React-Bootstrap</li>
-              <li>jQuery</li>
-              <li>Socket.io</li>
-              <li>Reveal.js (for our class presentation)</li>
+          <div id="levelup-tech">
+            <h3 id="levelup-tech-title">Technologies Used</h3>
+            <ul id="levelup-tech-list">
+              <li id="tech">Mongoose</li>
+              <li id="tech">MongoDB</li>
+              <li id="tech">Express</li>
+              <li id="tech">React</li>
+              <li id="tech">Node</li>
+              <li id="tech">Axios</li>
+              <li id="tech">React-Bootstrap</li>
+              <li id="tech">jQuery</li>
+              <li id="tech">Socket.io</li>
+              <li id="tech">Reveal.js (for our class presentation)</li>
             </ul>
+          </div>
+          <div id="levelup-link-group">
+            <a id="levelup-link">LINK</a>
+            <a id="levelup-link">REPO</a>
           </div>
         </div>
       </div>
