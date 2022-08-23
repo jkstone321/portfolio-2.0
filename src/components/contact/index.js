@@ -11,6 +11,9 @@ function Contact(props) {
     case "projects":
       containerStyle = { bottom: "-6px" };
       break;
+    case "aboutme":
+      containerStyle = { bottom: "13rem" };
+      break;
   }
   return (
     <>

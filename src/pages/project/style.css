@@ -150,7 +150,7 @@ transition: all 300ms linear;
 }
 
 #modal {
-    transition: visibility 0s, opacity 100ms linear !important;
+    transition: opacity 200ms ease !important;
 }
 
 #modal-info {
@@ -237,7 +237,7 @@ transition: all 300ms linear;
     width: 13rem;
     font-size: 3rem;
     cursor: pointer;
-    transition: all 300ms linear;
+    transition: letter-spacing 300ms linear;
     letter-spacing: 1px;
 }
 #levelup-link:hover,

@@ -6,8 +6,9 @@
   --secondary-light: #b68b6d;
   --secondary-dark: #664731;
 }
-
-
+*{
+  font-family: 'Open Sans', sans-serif;
+}
 html{
   background-color: var(--primary-dark);
 }

@@ -126,7 +126,17 @@ function Projects() {
       {/* LEVEL UP MODAL */}
       <div
         id="modal"
-        style={!levelUpModal ? { display: "none" } : { display: "inline" }}
+        style={
+          !levelUpModal
+            ? {
+                visibility: "hidden",
+                opacity: "0",
+              }
+            : {
+                visibility: "visible",
+                opacity: "1",
+              }
+        }
       >
         <div id="test-modal" onClick={() => handleLevelUpShow("levelUp")}></div>
         <div id="modal-info">
@@ -193,30 +203,31 @@ function Projects() {
             alt="close button"
             onClick={() => handleLevelUpShow("planted")}
           />
-          <h1>Planted</h1>
-          <div id="planted-text">
-            <p id="planted-sum">
-              Planted is the second project I did for the UCF Bootcamp. We were
-              tasked with making an app that utilizes a database using Node
-              packages MySQL2 and Sequellize. When the user creates an account
-              on Planted, they are given a grid they can use to plan out their
-              garden and their layout and plants are saved to their user in the
-              database.
-            </p>
-            <div id="planted-tech">
-              <h3 id="planted-tech-title">Technologies Used</h3>
-              <ul>
-                <li>BCrypt</li>
-                <li>DotEnv</li>
-                <li>Express</li>
-                <li>Handlebars (Express)</li>
-                <li>MySQL2</li>
-                <li>Sequellize</li>
-                <li>JQuery</li>
-                <li>JQueryUI</li>
-              </ul>
-            </div>
-            <div id="planted-links"></div>
+          <h1 id="levelup-title">Planted</h1>
+
+          <p id="levelup-sum">
+            Planted is the second project I did for the UCF Bootcamp. We were
+            tasked with making an app that utilizes a database using Node
+            packages MySQL2 and Sequellize. When the user creates an account on
+            Planted, they are given a grid they can use to plan out their garden
+            and their layout and plants are saved to their user in the database.
+          </p>
+          <div id="levelup-tech" style={{ top: "-16rem" }}>
+            <h3 id="levelup-tech-title">Technologies Used</h3>
+            <ul>
+              <li id="tech">BCrypt</li>
+              <li id="tech">DotEnv</li>
+              <li id="tech">Express</li>
+              <li id="tech">Handlebars (Express)</li>
+              <li id="tech">MySQL2</li>
+              <li id="tech">Sequellize</li>
+              <li id="tech">JQuery</li>
+              <li id="tech">JQueryUI</li>
+            </ul>
+          </div>
+          <div id="levelup-link-group" style={{ bottom: "5rem" }}>
+            <a id="levelup-link">LINK</a>
+            <a id="levelup-link">REPO</a>
           </div>
         </div>
       </div>
@@ -224,7 +235,17 @@ function Projects() {
       {/* IDUNNO MODAL */}
       <div
         id="modal"
-        style={!idunnoModal ? { display: "none" } : { display: "inline" }}
+        style={
+          !idunnoModal
+            ? {
+                visibility: "hidden",
+                opacity: "0",
+              }
+            : {
+                visibility: "visible",
+                opacity: "1",
+              }
+        }
       >
         <div id="test-modal" onClick={() => handleLevelUpShow("idunno")}></div>
         <div id="modal-info">
@@ -234,8 +255,8 @@ function Projects() {
             alt="close button"
             onClick={() => handleLevelUpShow("idunno")}
           />
-          <h1>iDunno</h1>
-          <p id="idunno-sum">
+          <h1 id="levelup-title">iDunno</h1>
+          <p id="levelup-sum" style={{ lineHeight: "1.9rem" }}>
             iDunno is the first project that was assigned in the UCF bootcamp.
             We were instructed with creating an app that is able to get
             information from two third party APIs. The premise of the app is to
@@ -248,13 +269,17 @@ function Projects() {
             like it to be, but it shows the amount of growth ive had as a web
             developer.
           </p>
-          <div id="idunno-tech">
-            <h3 id="idunno-tech-title">Technologies Used</h3>
+          <div id="levelup-tech" style={{ top: "-28rem" }}>
+            <h3 id="levelup-tech-title">Technologies Used</h3>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+              <li id="tech">HTML</li>
+              <li id="tech">CSS</li>
+              <li id="tech">JavaScript</li>
             </ul>
+          </div>
+          <div id="levelup-link-group" style={{ bottom: "7rem" }}>
+            <a id="levelup-link">LINK</a>
+            <a id="levelup-link">REPO</a>
           </div>
         </div>
       </div>

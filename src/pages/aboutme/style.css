@@ -4,4 +4,26 @@
 #aboutme-title{
     position: relative;
     display: inline-block;
+    left: -12rem;
+    top: 3rem;
+    padding: 0 1rem 1rem 1rem;
+    border-bottom: 2px solid var(--primary-dark);
+}
+#selfie {
+    max-width: 13rem;
+    border: 0.25rem solid var(--primary-dark);
+    position: relative;
+    border-radius: 0.5rem;
+    right: -15rem;
+    top: -21rem;
+}
+#aboutme-sum {
+    position: relative;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 700;
+    top: 3rem;
+    left: 5rem;
+    width: 25rem;
+    text-align:justify;
 }
