@@ -75,7 +75,7 @@ function Projects() {
             <div id="project-box" className="planted-box">
               <h1 id="project-title">Planted</h1>
             </div>
-            <div id="project-links">
+            <div id="project-links" style={{bottom: "10rem"}}>
               <a id="link-button" onClick={() => handleLevelUpShow("planted")}>
                 About
               </a>
@@ -99,7 +99,7 @@ function Projects() {
             <div id="project-box">
               <h1 id="project-title">iDunno</h1>
             </div>
-            <div id="project-links">
+            <div id="project-links" style={{bottom: "1rem"}}>
               <a id="link-button" onClick={() => handleLevelUpShow("idunno")}>
                 About
               </a>
@@ -123,8 +123,8 @@ function Projects() {
         <Navigation page="projects" />
         <Contact page="projects" />
       </div>
-      {/* LEVEL UP MODAL */}
-      <div
+
+      {/* <div
         id="modal"
         style={
           !levelUpModal
@@ -180,7 +180,7 @@ function Projects() {
         </div>
       </div>
 
-      {/* PLANTED MODAL */}
+    
       <div
         id="modal"
         style={
@@ -232,7 +232,7 @@ function Projects() {
         </div>
       </div>
 
-      {/* IDUNNO MODAL */}
+      
       <div
         id="modal"
         style={
@@ -281,8 +281,8 @@ function Projects() {
             <a id="levelup-link">LINK</a>
             <a id="levelup-link">REPO</a>
           </div>
-        </div>
-      </div>
+         </div>
+      </div>*/}
     </>
   );
 }
