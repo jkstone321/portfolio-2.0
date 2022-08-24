@@ -295,14 +295,3 @@ transition: all 300ms linear;
     }
     
   }
-  @media screen and (max-height:45rem) {
-        #box{
-          height: 100% !important;
-          border-radius: 0;
-          position:fixed;
-          overflow-y: hidden;
-        }
-        #project-box{
-            margin-top: 0;
-        }
-      }

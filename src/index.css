@@ -55,7 +55,7 @@ a{
   transition: all 300ms linear;
   transition: visibility 0;
 }
-@media screen and (max-width:800px) {
+@media screen and (max-width:730px) {
   #box{
     min-width: 100%;
     border-radius: 0 !important;
@@ -63,8 +63,8 @@ a{
     width: 100% !important;
   }
 }
-@media screen and (max-height:45rem) {
+/* @media screen and (max-height:45rem) {
   #box{
     height: 100% !important;
   }
-}
+} */
