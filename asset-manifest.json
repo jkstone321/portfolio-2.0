@@ -1,19 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-2.0/static/css/main.62b0e28e.css",
-    "main.js": "/portfolio-2.0/static/js/main.56272f70.js",
-    "static/js/787.1297335f.chunk.js": "/portfolio-2.0/static/js/787.1297335f.chunk.js",
-    "static/media/planted-background.jpg": "/portfolio-2.0/static/media/planted-background.6587db70b5d9c57b19eb.jpg",
-    "static/media/levelup-background.png": "/portfolio-2.0/static/media/levelup-background.67edb5e4a75b9871eefb.png",
+    "main.css": "/portfolio-2.0/static/css/main.0efb639a.css",
+    "main.js": "/portfolio-2.0/static/js/main.05fbfa78.js",
+    "static/media/mypic.jpeg": "/portfolio-2.0/static/media/mypic.7995a8c8dd1e785cde2b.jpeg",
+    "static/media/planted-background.jpg": "/portfolio-2.0/static/media/planted-background.c683297a05d2f66e66ea.jpg",
+    "static/media/levelup-background.png": "/portfolio-2.0/static/media/levelup-background.d1fb9605ec4634bd563f.png",
+    "static/media/pickolascage.jpg": "/portfolio-2.0/static/media/pickolascage.b642fc32a1529e4ef640.jpg",
     "index.html": "/portfolio-2.0/index.html",
-    "static/media/house.svg": "/portfolio-2.0/static/media/house.8173eeb9d12f4c7ced962ebbe5b0a6d0.svg",
-    "static/media/x.svg": "/portfolio-2.0/static/media/x.85f9f2a1f603d5a966a44474678a7981.svg",
-    "main.62b0e28e.css.map": "/portfolio-2.0/static/css/main.62b0e28e.css.map",
-    "main.56272f70.js.map": "/portfolio-2.0/static/js/main.56272f70.js.map",
-    "787.1297335f.chunk.js.map": "/portfolio-2.0/static/js/787.1297335f.chunk.js.map"
+    "main.0efb639a.css.map": "/portfolio-2.0/static/css/main.0efb639a.css.map",
+    "main.05fbfa78.js.map": "/portfolio-2.0/static/js/main.05fbfa78.js.map"
   },
   "entrypoints": [
-    "static/css/main.62b0e28e.css",
-    "static/js/main.56272f70.js"
+    "static/css/main.0efb639a.css",
+    "static/js/main.05fbfa78.js"
   ]
 }
