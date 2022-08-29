@@ -10,6 +10,10 @@
     background-image: url("./levelup-background.png");
     background-size: cover;
 }
+.idunno-box{
+    background-image: url("./pickolascage.jpg");
+    background-size: cover;
+}
 
 img {
     min-height: 2rem;
@@ -55,17 +59,19 @@ img {
     border-radius: 0.5rem;
     width: 11rem;
     border: 2px solid var(--primary-light);
-    background-color: var(--primary-dark);
+    background-color:rgba(82, 82, 82, 0.158);
+    backdrop-filter: blur(2px);
+
 }
 
 
 /*** THIS IS CODE FOR THE LINKS THAT SHOW UP WHEN HOVERING ***/
 /*************************************************************/
 /**/#project-links{
-/**/    background-color: #2b3e44;
+/**/    background-color:rgba(82, 82, 82, 0.158);
+    backdrop-filter: blur(2px);
 /**/    border: .75rem solid var(--primary-dark);
 /**/    box-sizing: border-box;
-/**/    border-top: 0;
 /**/    position: absolute;
 /**/    bottom: 0;
 /**/    display: flex;

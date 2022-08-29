@@ -1,17 +1,12 @@
 import "./style.css";
 import Contact from "../../components/contact";
 import Navigation from "../../components/navigation";
-import CloseBtn from "../../x.svg";
 import React, { useState } from "react";
 
 function Projects() {
   const [levelUpModal, setLevelUpModal] = useState(false);
   const [plantedModal, setPlantedModal] = useState(false);
   const [idunnoModal, setIdunnoModal] = useState(false);
-
-  const [levelUpLinks, setLevelUpLinks] = useState(false);
-  const [plantedLinks, setPlantedLinks] = useState(false);
-  const [idunnoLinks, setIdunnoLinks] = useState(false);
 
   const handleLevelUpShow = (project) => {
     switch (project) {
@@ -29,19 +24,6 @@ function Projects() {
     }
   };
 
-  const handleLinksShow = (project) => {
-    switch (project) {
-      case "levelup":
-        setLevelUpLinks(!levelUpLinks);
-        break;
-      case "planted":
-        setPlantedLinks(!plantedLinks);
-        break;
-      case "idunno":
-        setIdunnoLinks(!idunnoLinks);
-        break;
-    }
-  };
 
   return (
     <>
@@ -57,14 +39,14 @@ function Projects() {
               </a>
               <a
                 href="https://garden-boys-missing-their-popp.herokuapp.com/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 id="link-button"
               >
                 Link
               </a>
               <a
                 href="https://github.com/Drago9082/Level-Up"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 id="link-button"
               >
                 Repo
@@ -75,20 +57,20 @@ function Projects() {
             <div id="project-box" className="planted-box">
               <h1 id="project-title">Planted</h1>
             </div>
-            <div id="project-links" style={{bottom: "10rem"}}>
+            <div id="project-links" style={{ bottom: "10rem" }}>
               <a id="link-button" onClick={() => handleLevelUpShow("planted")}>
                 About
               </a>
               <a
                 href="https://agile-wildwood-01808.herokuapp.com/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 id="link-button"
               >
                 Link
               </a>
               <a
                 href="https://github.com/jkstone321/planted"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 id="link-button"
               >
                 Repo
@@ -96,23 +78,23 @@ function Projects() {
             </div>
           </li>
           <li>
-            <div id="project-box">
+            <div id="project-box" className="idunno-box">
               <h1 id="project-title">iDunno</h1>
             </div>
-            <div id="project-links" style={{bottom: "1rem"}}>
+            <div id="project-links" style={{ bottom: "1rem" }}>
               <a id="link-button" onClick={() => handleLevelUpShow("idunno")}>
                 About
               </a>
               <a
                 href="https://droessling94.github.io/IDunno/"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 id="link-button"
               >
                 Link
               </a>
               <a
                 href="https://github.com/Droessling94/IDunno"
-                target="_blank"
+                target="_blank" rel="noreferrer"
                 id="link-button"
               >
                 Repo
