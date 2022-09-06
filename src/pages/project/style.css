@@ -5,17 +5,14 @@
 .planted-box{
     background-image: url("./planted-background.jpg");
     background-size: cover;
-    background-attachment: fixed;
 }
 .levelup-box{
     background-image: url("./levelup-background.png");
     background-size: cover;
-    background-attachment: fixed;
 }
 .idunno-box{
     background-image: url("./pickolascage.jpg");
     background-size: cover;
-    background-attachment: fixed;
 }
 
 img {
