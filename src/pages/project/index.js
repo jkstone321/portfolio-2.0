@@ -24,7 +24,6 @@ function Projects() {
     }
   };
 
-
   return (
     <>
       <div id="box" className="project-box">
@@ -32,32 +31,38 @@ function Projects() {
           <li>
             <div id="project-box" className="levelup-box">
               <h1 id="project-title">Level Up</h1>
-            </div>
-            <div id="project-links">
-              <a id="link-button" onClick={() => handleLevelUpShow("levelUp")}>
-                About
-              </a>
-              <a
-                href="https://garden-boys-missing-their-popp.herokuapp.com/"
-                target="_blank" rel="noreferrer"
-                id="link-button"
-              >
-                Link
-              </a>
-              <a
-                href="https://github.com/Drago9082/Level-Up"
-                target="_blank" rel="noreferrer"
-                id="link-button"
-              >
-                Repo
-              </a>
+
+              <div id="project-links">
+                <a
+                  id="link-button"
+                  onClick={() => handleLevelUpShow("levelUp")}
+                >
+                  About
+                </a>
+                <a
+                  href="https://garden-boys-missing-their-popp.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  id="link-button"
+                >
+                  Link
+                </a>
+                <a
+                  href="https://github.com/Drago9082/Level-Up"
+                  target="_blank"
+                  rel="noreferrer"
+                  id="link-button"
+                >
+                  Repo
+                </a>
+              </div>
             </div>
           </li>
           <li>
             <div id="project-box" className="planted-box">
               <h1 id="project-title">Planted</h1>
             </div>
-            <div id="project-links" style={{ bottom: "10rem" }}>
+            {/* <div id="project-links" style={{ bottom: "10rem" }}>
               <a id="link-button" onClick={() => handleLevelUpShow("planted")}>
                 About
               </a>
@@ -75,13 +80,13 @@ function Projects() {
               >
                 Repo
               </a>
-            </div>
+            </div> */}
           </li>
           <li>
             <div id="project-box" className="idunno-box">
               <h1 id="project-title">iDunno</h1>
             </div>
-            <div id="project-links" style={{ bottom: "1rem" }}>
+            {/* <div id="project-links" style={{ bottom: "1rem" }}>
               <a id="link-button" onClick={() => handleLevelUpShow("idunno")}>
                 About
               </a>
@@ -99,7 +104,7 @@ function Projects() {
               >
                 Repo
               </a>
-            </div>
+            </div> */}
           </li>
         </ul>
         <Navigation page="projects" />

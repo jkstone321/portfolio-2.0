@@ -5,14 +5,17 @@
 .planted-box{
     background-image: url("./planted-background.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 .levelup-box{
     background-image: url("./levelup-background.png");
     background-size: cover;
+    background-attachment: fixed;
 }
 .idunno-box{
     background-image: url("./pickolascage.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 img {
@@ -283,17 +286,21 @@ transition: all 300ms linear;
 @media screen and (max-width:730px) {
     li{
         width: 100%;
-        max-width: 99%;
-        margin: 0.25rem;
         padding: 0;
     }
+    .levelup-box {
+        background-position: 1rem;
+    }
     #link-list-projects{
-        margin-top: 2rem;
+        margin: 0;
+        padding: 10px;
+        top: 0;
         flex-direction: column;
     }
     #project-box {
-        height: 8rem;
+        height: 10rem;
         width: 100%;
+        margin-bottom: 10px;
     }
     #box {
         border-radius: 0 !important;
@@ -308,18 +315,27 @@ transition: all 300ms linear;
         visibility: visible;
         opacity: 1;
         background: none;
+        position: relative;
         border: 0;
         flex-direction: row !important;
-        right: 7rem;
-        bottom: 19rem;
-        height: auto;
-    }
-    #link-button{
         padding: 0;
         margin: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+        border-top: 2px solid var(--primary-light);
+        border-bottom: 2px solid var(--primary-light);
+        border-radius: 0;
+    }
+    #link-button{
+        padding: 0.5rem;
+        margin: 0.5rem;
+        left: 0;
+        bottom: 0;
+        transform: translateX(0)
     }
     #project-title{
-        left: 0;
-        transform: translate(8%, -10%);
+        margin: 8px 0 4px 0;
+        padding: 0;
     }
   }
