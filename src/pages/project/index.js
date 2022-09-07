@@ -2,7 +2,7 @@ import "./style.css";
 import Contact from "../../components/contact";
 import Navigation from "../../components/navigation";
 import React, { useState } from "react";
-import xButton from "../../x.svg";
+import xButton from "../../x.png";
 
 function Projects() {
   const [levelUpModal, setLevelUpModal] = useState(false);

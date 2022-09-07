@@ -33,7 +33,7 @@ function Navigation(props) {
       isMobile
         ? (navBoxStyling = {
             justifyContent: "space-between",
-            bottom: "30rem",
+            bottom: "32rem",
           })
         : (navBoxStyling = {
             justifyContent: "space-between",
