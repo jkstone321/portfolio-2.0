@@ -361,20 +361,20 @@ img {
         width: 80% !important;
     }
     #levelup-sum {
-        top: 3rem;
+        top: 5rem;
         left: 0;
         margin: auto;
         width: 90%;
     }
     #levelup-tech {
-        top: 0rem !important;
+        top: 20% !important;
         left: 0;
         margin: auto;
         width: 90%;
 
     }
     #levelup-link-group {
-        top: 4rem;
+        top: 13rem;
         padding-bottom: 2rem;
     }
   }
