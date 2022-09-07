@@ -46,10 +46,15 @@ function Navigation(props) {
     case "aboutme":
       text = "Home";
       text2 = "Projects";
-      navBoxStyling = {
-        justifyContent: "space-evenly",
-        bottom: "20rem",
-      };
+      isMobile
+        ? (navBoxStyling = {
+            justifyContent: "space-between",
+            bottom: "-7rem",
+          })
+        : (navBoxStyling = {
+            justifyContent: "space-evenly",
+            bottom: "20rem",
+          });
       btnStyling = { margin: "0 1rem 0 1rem" };
       goesHome = true;
       goesAbout = false;
