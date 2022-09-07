@@ -61,8 +61,8 @@ a{
     border-radius: 0 !important;
     height: 100% !important;
     width: 100% !important;
-    box-shadow: 0 !important;
-    -webkit-box-shadow: 0 !important;
+    box-shadow: none;
+    -webkit-box-shadow: none;
   }
   body{
     background-color: var(--primary-light) !important;
