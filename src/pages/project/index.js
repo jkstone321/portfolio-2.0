@@ -5,6 +5,7 @@ import React, { useState } from "react";
 
 function Projects() {
   const [levelUpModal, setLevelUpModal] = useState(false);
+  const [levelUpLinks, setLevelUpLinks] = useState(false);
   const [plantedModal, setPlantedModal] = useState(false);
   const [idunnoModal, setIdunnoModal] = useState(false);
 
@@ -23,12 +24,21 @@ function Projects() {
         return;
     }
   };
+  const handleMouseEnter = () => {
+    setLevelUpLinks(true);
+  };
+  const handleMouseLeave = () => {
+    setLevelUpLinks(false);
+  };
 
   return (
     <>
       <div id="box" className="project-box">
         <ul id="link-list-projects">
-          <li>
+          <li
+            onMouseEnter={() => handleMouseEnter()}
+            onMouseLeave={() => handleMouseLeave()}
+          >
             <div id="project-box" className="levelup-box">
               <h1 id="project-title">Level Up</h1>
             </div>
@@ -45,7 +55,11 @@ function Projects() {
           </li>
         </ul>
         <div id="link-group">
-          <div id="project-links">
+          <div
+            id="project-links"
+            className="levelup-links"
+            style={levelUpLinks ? { opacity: "1" } : { opacity: "0" }}
+          >
             <a id="link-button" onClick={() => handleLevelUpShow("levelUp")}>
               About
             </a>

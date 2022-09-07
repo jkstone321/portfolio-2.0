@@ -10,6 +10,12 @@
     background-image: url("./levelup-background.png");
     background-size: cover;
 }
+.levelup-links{
+    opacity: 0;
+}
+.levelup-links:hover {
+    opacity: 1 !important;
+}
 .idunno-box{
     background-image: url("./pickolascage.jpg");
     background-size: cover;
@@ -78,7 +84,6 @@ img {
 /**/    z-index: 10;
 /**/    border-bottom-left-radius: 1.5rem;
 /**/    border-bottom-right-radius: 1.5rem;
-/**/    opacity: 1;
 /**/    height: 15rem;
 /**/    padding: .5rem 0 .5rem 0;
 /**/    justify-content: space-evenly;
