@@ -1,5 +1,5 @@
 import "./style.css";
-
+import { useMediaQuery } from "react-responsive";
 function Navigation(props) {
   let navBoxStyling = {};
   let btnStyling = {};
@@ -7,6 +7,7 @@ function Navigation(props) {
   let text2 = "";
   let goesHome = false;
   let goesAbout = true;
+  const isMobile = useMediaQuery({ query: `(max-width: 730px)` });
   switch (props.page) {
     case "homepage":
       text = "Projects";
@@ -22,10 +23,15 @@ function Navigation(props) {
     case "projects":
       text = "Home";
       text2 = "About Me";
-      navBoxStyling = {
-        justifyContent: "space-between",
-        bottom: "10.5rem",
-      };
+      isMobile
+        ? (navBoxStyling = {
+            justifyContent: "space-between",
+            bottom: "30rem",
+          })
+        : (navBoxStyling = {
+            justifyContent: "space-between",
+            bottom: "10.5rem",
+          });
       btnStyling = { margin: "0 1rem 0 1rem" };
       goesHome = true;
       goesAbout = true;
