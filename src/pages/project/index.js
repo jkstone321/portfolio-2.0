@@ -2,6 +2,7 @@ import "./style.css";
 import Contact from "../../components/contact";
 import Navigation from "../../components/navigation";
 import React, { useState } from "react";
+import xButton from "../../x.svg";
 
 function Projects() {
   const [levelUpModal, setLevelUpModal] = useState(false);
@@ -167,7 +168,7 @@ function Projects() {
         <Contact page="projects" />
       </div>
 
-      {/* <div
+      <div
         id="modal"
         style={
           !levelUpModal
@@ -180,11 +181,11 @@ function Projects() {
                 opacity: "1",
               }
         }
+        onClick={() => handleLevelUpShow("levelUp")}
       >
-        <div id="test-modal" onClick={() => handleLevelUpShow("levelUp")}></div>
         <div id="modal-info">
           <img
-            src={CloseBtn}
+            src={xButton}
             id="close-btn"
             alt="close button"
             onClick={() => handleLevelUpShow("levelUp")}
@@ -223,8 +224,7 @@ function Projects() {
         </div>
       </div>
 
-    
-      <div
+      {/*<div
         id="modal"
         style={
           !plantedModal

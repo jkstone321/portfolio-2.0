@@ -148,58 +148,44 @@ img {
 /*************************************************************/
 /*************************************************************/
 
-#test-modal{
+#modal {
+    transition: opacity 200ms ease !important;
+    background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: black;
-    top: 50%;
-    right: 50%;
-    opacity: .5;
-    transform: translate(50%, -50%);
-    cursor: pointer;
-}
-
-#modal {
-    transition: opacity 200ms ease !important;
 }
 
 #modal-info {
-    z-index: 10;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    position: absolute;
-    display: block;
     background-color: var(--primary-dark);
     color: var(--primary-light);
-    opacity: 1;
-    height: 50rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
     width: 60rem;
-    border-radius: 0.5rem;
     max-width: 100%;
     max-height: 100%;
+    border-radius: 0.5rem;
 }
 
-#close-btn {
+#close-btn{
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    transform: scale(1.5);
-    cursor: pointer;
+    top: 3%;
+    right: 3%;
 }
-
 /* THIS CODE IS FOR ALL THE INFORMATION ON THE RESPECTIVE MODALS */
 /*****************************************************************/
 #levelup-title {
-    text-align: left;
+    text-align: center;
     font-size: 5rem;
     position: relative;
-    left: 7rem;
+    left: 8%;
     top: 4rem;
     margin: 0;
     padding: 0;
-    width:20rem;
+    width:40%;
     line-height: 5rem;
     padding-bottom: 1.5rem;
     border-bottom: 5px solid var(--primary-light)
@@ -209,15 +195,16 @@ img {
     font-size: 1.1rem;
     line-height: 2rem;
     top: 5rem;
-    left: 5rem;
-    width: 25rem;
+    left: 8%;
+    width: 40%;
+    height: 50%;
     text-align:justify;
 }
 #levelup-tech {
-    width: 20rem;
+    width: 37%;
     position: relative;
-    left: 33.5rem;
-    top: -24rem;
+    left: 55%;
+    top: -47%;
     font-size: 1.1rem;
     border: 2px solid var(--primary-light);
     border-radius: .5rem;
@@ -239,7 +226,7 @@ img {
 }
 #levelup-link-group {
     position: relative;
-    bottom: 19rem;
+    bottom: 38%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -358,4 +345,44 @@ img {
         font-size: 1.25rem;
         letter-spacing: 1px;
     }
+
+
+    /* CODE FOR MODALS WHEN IN MOBILE */
+    #modal-info {
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+    }
+    #levelup-title {
+        padding: 1rem 1rem 2rem 1rem;
+        margin: auto;
+        top: 1rem;
+        left: 0;
+        width: 80% !important;
+    }
+    #levelup-sum {
+        top: 3rem;
+        left: 0;
+        margin: auto;
+        width: 90%;
+    }
+    #levelup-tech {
+        top: 0rem !important;
+        left: 0;
+        margin: auto;
+        width: 90%;
+
+    }
+    #levelup-link-group {
+        top: 4rem;
+        padding-bottom: 2rem;
+    }
   }
+@media screen and (max-width:800px) {
+    #levelup-title{
+        width: 45%;
+    }
+    #levelup-tech{
+        top: -42%;
+    }
+}
