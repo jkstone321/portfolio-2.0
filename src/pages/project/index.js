@@ -7,7 +7,9 @@ function Projects() {
   const [levelUpModal, setLevelUpModal] = useState(false);
   const [levelUpLinks, setLevelUpLinks] = useState(false);
   const [plantedModal, setPlantedModal] = useState(false);
+  const [plantedLinks, setPlantedLinks] = useState(false);
   const [idunnoModal, setIdunnoModal] = useState(false);
+  const [idunnoLinks, setIdunnoLinks] = useState(false);
 
   const handleLevelUpShow = (project) => {
     switch (project) {
@@ -24,11 +26,35 @@ function Projects() {
         return;
     }
   };
-  const handleMouseEnter = () => {
-    setLevelUpLinks(true);
+  const handleMouseEnter = (project) => {
+    switch (project) {
+      case "levelup":
+        setLevelUpLinks(true);
+        break;
+      case "planted":
+        setPlantedLinks(true);
+        break;
+      case "idunno":
+        setIdunnoLinks(true);
+        break;
+      default:
+        return;
+    }
   };
-  const handleMouseLeave = () => {
-    setLevelUpLinks(false);
+  const handleMouseLeave = (project) => {
+    switch (project) {
+      case "levelup":
+        setLevelUpLinks(false);
+        break;
+      case "planted":
+        setPlantedLinks(false);
+        break;
+      case "idunno":
+        setIdunnoLinks(false);
+        break;
+      default:
+        return;
+    }
   };
 
   return (
@@ -36,19 +62,25 @@ function Projects() {
       <div id="box" className="project-box">
         <ul id="link-list-projects">
           <li
-            onMouseEnter={() => handleMouseEnter()}
-            onMouseLeave={() => handleMouseLeave()}
+            onMouseEnter={() => handleMouseEnter("levelup")}
+            onMouseLeave={() => handleMouseLeave("levelup")}
           >
             <div id="project-box" className="levelup-box">
               <h1 id="project-title">Level Up</h1>
             </div>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => handleMouseEnter("planted")}
+            onMouseLeave={() => handleMouseLeave("planted")}
+          >
             <div id="project-box" className="planted-box">
               <h1 id="project-title">Planted</h1>
             </div>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => handleMouseEnter("idunno")}
+            onMouseLeave={() => handleMouseLeave("idunno")}
+          >
             <div id="project-box" className="idunno-box">
               <h1 id="project-title">iDunno</h1>
             </div>
@@ -80,7 +112,11 @@ function Projects() {
               Repo
             </a>
           </div>
-          <div id="project-links">
+          <div
+            id="project-links"
+            className="planted-links"
+            style={plantedLinks ? { opacity: "1" } : { opacity: "0" }}
+          >
             <a id="link-button" onClick={() => handleLevelUpShow("planted")}>
               About
             </a>
@@ -101,7 +137,11 @@ function Projects() {
               Repo
             </a>
           </div>
-          <div id="project-links">
+          <div
+            id="project-links"
+            className="idunno-links"
+            style={idunnoLinks ? { opacity: "1" } : { opacity: "0" }}
+          >
             <a id="link-button" onClick={() => handleLevelUpShow("idunno")}>
               About
             </a>

@@ -20,8 +20,8 @@ function Contact(props) {
       break;
     case "projects":
       isMobile
-        ? (containerStyle = { bottom: "27rem" })
-        : (containerStyle = { bottom: "14rem" });
+        ? (containerStyle = { bottom: "27rem", position: "relative" })
+        : (containerStyle = { bottom: "14rem", position: "relative" });
       break;
     case "aboutme":
       containerStyle = { bottom: "13rem" };

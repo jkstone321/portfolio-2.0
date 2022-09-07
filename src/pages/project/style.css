@@ -6,15 +6,15 @@
     background-image: url("./planted-background.jpg");
     background-size: cover;
 }
+.planted-links, .levelup-links, .idunno-links{
+    opacity: 0;
+}
+.planted-links:hover, .levelup-links:hover, .idunno-links:hover{
+    opacity: 1 !important;
+}
 .levelup-box{
     background-image: url("./levelup-background.png");
     background-size: cover;
-}
-.levelup-links{
-    opacity: 0;
-}
-.levelup-links:hover {
-    opacity: 1 !important;
 }
 .idunno-box{
     background-image: url("./pickolascage.jpg");
@@ -294,6 +294,9 @@ img {
     }
     .levelup-box {
         background-position: 1rem;
+    }
+    .levelup-links, .planted-links, .idunno-links {
+        opacity: 1 !important;
     }
     #link-list-projects{
         margin: 0;
