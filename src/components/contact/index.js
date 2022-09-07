@@ -9,7 +9,14 @@ function Contact(props) {
   let containerStyle = {};
   switch (props.page) {
     case "homepage":
-      containerStyle = { bottom: "-1rem" };
+      isMobile
+        ? (containerStyle = {
+            position: "absolute",
+            bottom: "10%",
+            left: "50%",
+            transform: "translateX(-50%)",
+          })
+        : (containerStyle = { bottom: "-1rem", position: "relative" });
       break;
     case "projects":
       isMobile

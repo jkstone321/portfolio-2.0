@@ -14,10 +14,17 @@ function Navigation(props) {
       text2 = "About Me";
       goesHome = false;
       goesAbout = true;
-      navBoxStyling = {
-        justifyContent: "space-evenly",
-        bottom: "2rem",
-      };
+      isMobile
+        ? (navBoxStyling = {
+            justifyContent: "space-evenly",
+            position: "absolute",
+            width: "100%",
+            bottom: "25%",
+          })
+        : (navBoxStyling = {
+            justifyContent: "space-evenly",
+            bottom: "2rem",
+          });
       btnStyling = { margin: "0" };
       break;
     case "projects":

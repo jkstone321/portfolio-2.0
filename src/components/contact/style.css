@@ -1,6 +1,6 @@
 #contact-container {
     z-index: 8;
-    position: relative;
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,10 +21,10 @@
     transform: scale(0.6);
 }
 
-@media screen and (max-width: 730px) {
+/* @media screen and (max-width: 730px) {
     #contact-container {
         position: relative;
         right: 50%;
         transform: translateX(50%);
     }
-}
+} */
