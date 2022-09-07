@@ -367,16 +367,17 @@ img {
         left: 0;
         margin: auto;
         width: 90%;
+        height: auto;
     }
     #levelup-tech {
-        top: 18rem !important;
+        top: 10rem !important;
         left: 0;
         margin: auto;
         width: 90%;
 
     }
     #levelup-link-group {
-        top: 20rem;
+        top: 15rem;
         padding-bottom: 2rem;
     }
   }

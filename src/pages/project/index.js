@@ -224,7 +224,7 @@ function Projects() {
         </div>
       </div>
 
-      {/*<div
+      <div
         id="modal"
         style={
           !plantedModal
@@ -241,7 +241,7 @@ function Projects() {
         <div id="test-modal" onClick={() => handleLevelUpShow("planted")}></div>
         <div id="modal-info">
           <img
-            src={CloseBtn}
+            src={xButton}
             id="close-btn"
             alt="close button"
             onClick={() => handleLevelUpShow("planted")}
@@ -255,7 +255,7 @@ function Projects() {
             Planted, they are given a grid they can use to plan out their garden
             and their layout and plants are saved to their user in the database.
           </p>
-          <div id="levelup-tech" style={{ top: "-16rem" }}>
+          <div id="levelup-tech" style={{ top: "-50%" }}>
             <h3 id="levelup-tech-title">Technologies Used</h3>
             <ul>
               <li id="tech">BCrypt</li>
@@ -268,14 +268,13 @@ function Projects() {
               <li id="tech">JQueryUI</li>
             </ul>
           </div>
-          <div id="levelup-link-group" style={{ bottom: "5rem" }}>
+          <div id="levelup-link-group" style={{ bottom: "35%" }}>
             <a id="levelup-link">LINK</a>
             <a id="levelup-link">REPO</a>
           </div>
         </div>
       </div>
 
-      
       <div
         id="modal"
         style={
@@ -293,7 +292,7 @@ function Projects() {
         <div id="test-modal" onClick={() => handleLevelUpShow("idunno")}></div>
         <div id="modal-info">
           <img
-            src={CloseBtn}
+            src={xButton}
             id="close-btn"
             alt="close button"
             onClick={() => handleLevelUpShow("idunno")}
@@ -312,7 +311,7 @@ function Projects() {
             like it to be, but it shows the amount of growth ive had as a web
             developer.
           </p>
-          <div id="levelup-tech" style={{ top: "-28rem" }}>
+          <div id="levelup-tech" style={{ top: "-42%" }}>
             <h3 id="levelup-tech-title">Technologies Used</h3>
             <ul>
               <li id="tech">HTML</li>
@@ -320,12 +319,12 @@ function Projects() {
               <li id="tech">JavaScript</li>
             </ul>
           </div>
-          <div id="levelup-link-group" style={{ bottom: "7rem" }}>
+          <div id="levelup-link-group" style={{ bottom: "5%" }}>
             <a id="levelup-link">LINK</a>
             <a id="levelup-link">REPO</a>
           </div>
-         </div>
-      </div>*/}
+        </div>
+      </div>
     </>
   );
 }
