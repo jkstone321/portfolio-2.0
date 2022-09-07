@@ -2,19 +2,25 @@ import "./style.css";
 import LinkedLogo from "./linkedin.png";
 import GithubLogo from "./github.png";
 import EmailLogo from "./at.png";
+import { useMediaQuery } from "react-responsive";
 function Contact(props) {
+  const isMobile = useMediaQuery({ query: `(max-width: 730px)` });
+  console.log(isMobile);
   let containerStyle = {};
   switch (props.page) {
     case "homepage":
       containerStyle = { bottom: "-1rem" };
       break;
     case "projects":
-      containerStyle = { bottom: "-6px" };
+      isMobile
+        ? (containerStyle = { bottom: "27rem" })
+        : (containerStyle = { bottom: "14rem" });
       break;
     case "aboutme":
       containerStyle = { bottom: "13rem" };
       break;
   }
+
   return (
     <>
       <div id="contact-container" style={containerStyle}>

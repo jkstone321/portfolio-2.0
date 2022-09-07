@@ -7,10 +7,12 @@
     padding: 0;
     margin: 0;
     border: 0;
+    pointer-events: none;
 }
 #contact-link {
     z-index: 9;
     border-radius: 50%;
+    pointer-events: all;
     cursor: pointer;
     transition: all 300ms ease;
     transform: scale(0.5);
@@ -21,9 +23,8 @@
 
 @media screen and (max-width: 730px) {
     #contact-container {
-        position: absolute;
+        position: relative;
         right: 50%;
         transform: translateX(50%);
-        bottom: 1rem !important;
     }
 }

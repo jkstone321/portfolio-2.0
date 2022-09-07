@@ -65,6 +65,9 @@ a{
   body{
     background-color: var(--primary-light) !important;
   }
+  html{
+    background-color: var(--primary-light) !important;
+  }
 }
 /* @media screen and (max-height:45rem) {
   #box{
