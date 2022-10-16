@@ -42,17 +42,23 @@ function Contact(props) {
     <>
       <div id="contact-container" style={containerStyle}>
         <div id="contact-link">
-          <img
-            src={LinkedLogo}
-            className="linkedin-logo"
-            id="contact-logos"
-          ></img>
+          <a href="https://www.linkedin.com/in/jordanstone321/" target="_blank">
+            <img
+              src={LinkedLogo}
+              className="linkedin-logo"
+              id="contact-logos"
+            ></img>
+          </a>
         </div>
         <div id="contact-link">
-          <img src={GithubLogo} alt="github logo" id="contact-logos"></img>
+          <a href="https://github.com/jkstone321" target="_blank">
+            <img src={GithubLogo} alt="github logo" id="contact-logos"></img>
+          </a>
         </div>
         <div id="contact-link">
-          <img src={EmailLogo} alt="at sign" id="contact-logos"></img>
+          <a href="mailto: jordanstone321@gmail.com">
+            <img src={EmailLogo} alt="at sign" id="contact-logos"></img>
+          </a>
         </div>
       </div>
     </>

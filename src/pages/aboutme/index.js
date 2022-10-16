@@ -9,13 +9,14 @@ function About() {
       <div id="box" className="aboutme-box">
         <h1 id="aboutme-title">About Me</h1>
         <p id="aboutme-sum">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Full-Stack web developer who highly values communication, not only
+          with other team members but with potential end users and project
+          leaders to get the best possible product. Successful problem solving
+          is a major reward for me and I am committed to tackling anything that
+          is handed to me. I know the value of learning and growing in this
+          fast-paced environment and am not afraid to seek out assistance and
+          resources. My goal is to bring the end user the best possible product
+          and one that I am proud of.
         </p>
         <img id="selfie" src={selfie} alt="picture of myself" />
         <Contact page="aboutme" />

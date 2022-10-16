@@ -19,12 +19,13 @@
 }
 #aboutme-sum {
     position: relative;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 2rem;
     font-weight: 700;
     top: 3rem;
     left: 5rem;
     width: 25rem;
+    height: 23rem;
     text-align:justify;
 }
 
