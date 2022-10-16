@@ -17,7 +17,7 @@
     background-size: cover;
 }
 .idunno-box{
-    background-image: url("./pickolascage.jpg");
+    background-image: url("./idunno.png");
     background-size: cover;
 }
 
@@ -74,7 +74,7 @@ img {
 /*** THIS IS CODE FOR THE LINKS THAT SHOW UP WHEN HOVERING ***/
 /*************************************************************/
 /**/#project-links{
-/**/    background-color:rgba(82, 82, 82, 0.158);
+/**/    background-color:rgba(0, 0, 0, 0.425);
 /**/    backdrop-filter: blur(2px);
 /**/    border: .75rem solid var(--primary-dark);
 /**/    box-sizing: border-box;
